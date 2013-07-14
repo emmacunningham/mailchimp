@@ -1,0 +1,718 @@
+/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+#outlook a {
+  padding: 0;
+}
+
+/* Force Outlook to provide a "view in browser" message */
+.ReadMsgBody {
+  width: 100%;
+}
+
+.ExternalClass {
+  width: 100%;
+}
+
+/* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+  line-height: 100%;
+}
+
+/* Force Hotmail to display normal line spacing */
+body, table, td, p, a, li, blockquote {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Prevent WebKit and Windows mobile changing default text sizes */
+table, td {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+/* Remove spacing between tables in Outlook 2007 and up */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Allow smoother rendering of resized image in Internet Explorer */
+/* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse !important;
+}
+
+body, #bodyTable, #bodyCell {
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+}
+
+/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+/* ========== Page Styles ========== */
+#templateContainer {
+  width: 600px;
+}
+
+/**
+* @tab Page
+* @section background style
+* @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+* @theme page
+*/
+body, #bodyTable {
+  /*@editable*/
+  background-color: #f4f4f4;
+  /*@editable*/
+  font-family: Helvetica;
+}
+
+/**
+* @tab Page
+* @section heading 1
+* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+* @style heading 1
+*/
+h1 {
+  display: block;
+  /*@editable*/
+  font-family: Helvetica;
+  /*@editable*/
+  font-size: 26px;
+  /*@editable*/
+  font-style: normal;
+  /*@editable*/
+  font-weight: bold;
+  /*@editable*/
+  line-height: 100%;
+  /*@editable*/
+  letter-spacing: normal;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 2px;
+  margin-left: 0;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+* @tab Page
+* @section heading 2
+* @tip Set the styling for all second-level headings in your emails.
+* @style heading 2
+*/
+h2 {
+  display: block;
+  /*@editable*/
+  font-family: Helvetica;
+  /*@editable*/
+  font-size: 20px;
+  /*@editable*/
+  font-style: normal;
+  /*@editable*/
+  font-weight: bold;
+  /*@editable*/
+  line-height: 100%;
+  /*@editable*/
+  letter-spacing: normal;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+* @tab Page
+* @section heading 3
+* @tip Set the styling for all third-level headings in your emails.
+* @style heading 3
+*/
+h3 {
+  display: block;
+  /*@editable*/
+  font-family: Helvetica;
+  /*@editable*/
+  font-size: 16px;
+  /*@editable*/
+  font-style: italic;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  line-height: 100%;
+  /*@editable*/
+  letter-spacing: normal;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+* @tab Page
+* @section heading 4
+* @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+* @style heading 4
+*/
+h4 {
+  display: block;
+  /*@editable*/
+  font-family: Helvetica;
+  /*@editable*/
+  font-size: 14px;
+  /*@editable*/
+  font-style: italic;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  line-height: 100%;
+  /*@editable*/
+  letter-spacing: normal;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+  /*@editable*/
+  text-align: left;
+}
+
+/* ========== Header Styles ========== */
+/**
+* @tab Header
+* @section header style
+* @tip Set the background color and borders for your email's header area.
+* @theme header
+*/
+#templateHeaderLogo {
+  /*@editable*/
+  background-color: #2a454a;
+  /*@editable*/
+  height: 85px;
+}
+
+/**
+* @tab Header logo
+* @section header logo
+*/
+.headerLogo {
+  /*@editable*/
+  padding-right: 30px;
+}
+
+/**
+* @tab Header
+* @section header style
+* @tip Set the background color and borders for your email's header area.
+* @theme header
+*/
+#templateHeader {
+  /*@editable*/
+  background-color: #00a9c8;
+  /*@editable*/
+  color: #ffffff;
+  /*@editable*/
+  font-family: Helvetica;
+  /*@editable*/
+  text-align: left;
+  background-image: -ms-linear-gradient(top, #00a9c8 0%, #00b5a9 100%);
+  background-image: -moz-linear-gradient(top, #00a9c8 0%, #00b5a9 100%);
+  background-image: -o-linear-gradient(top, #00a9c8 0%, #00b5a9 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #00a9c8), color-stop(1, #00b5a9));
+  background-image: -webkit-linear-gradient(top, #00a9c8 0%, #00b5a9 100%);
+  background-image: linear-gradient(to bottom, #00a9c8 0%, #00b5a9 100%);
+}
+
+/**
+* @tab Header
+* @section header text
+* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+*/
+.headerContent {
+  /*@editable*/
+  padding-right: 30px;
+  /*@editable*/
+  padding-left: 30px;
+}
+
+.bigHeader {
+  /*@editable*/
+  font-size: 44px;
+  /*@editable*/
+  font-weight: bold;
+}
+
+/**
+* @tab Header
+* @section header text
+* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+*/
+.headerContentDate {
+  /*@editable*/
+  padding-right: 30px;
+  /*@editable*/
+  padding-bottom: 15px;
+  /*@editable*/
+  padding-left: 30px;
+  /*@editable*/
+  font-weight: 200;
+  /*@editable*/
+  font-style: italic;
+}
+
+/**
+* @tab Header
+* @section header link
+* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+*/
+.headerContent a:link, .headerContent a:visited, .headerContent a .yshortcuts {
+  /*@editable*/
+  color: #EB4102;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+#headerImage {
+  height: auto;
+  max-width: 600px;
+}
+
+/* ========== Body Styles ========== */
+/**
+* @tab Body
+* @section body style
+* @tip Set the background color and borders for your email's body area.
+*/
+#templateBody {
+  /*@editable*/
+  background-color: #ffffff;
+}
+
+/**
+* @tab Body
+* @section body link
+* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+*/
+a:link, a:visited, a .yshortcuts {
+  /*@editable*/
+  color: black !important;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+  /*@editable*/
+  display: block;
+  padding-top: 30px !important;
+  font-style: italic;
+  font-family: Helvetica;
+}
+
+/* ========== Column Styles ========== */
+.icon-image {
+  padding-right: 20px;
+}
+
+.templateColumnContainer {
+  display: inline;
+  width: 260px;
+}
+
+/**
+* @tab Columns
+* @section column style
+* @tip Set the background color and borders for your email's column area.
+*/
+.templateColumns {
+  /*@editable*/
+  background-color: white !important;
+  /*@editable*/
+  border: 1px solid #b3b3b3 !important;
+}
+
+.twoCol {
+  background-color: #fff;
+  padding-top: 40px;
+  /*@editable*/
+  border: 1px solid #b3b3b3;
+}
+
+.twoCol.left {
+  padding-right: 8px;
+  padding-left: 30px;
+}
+
+.twoCol.right {
+  padding-left: 28px;
+}
+
+.twoCol img {
+  padding-bottom: 20px;
+}
+
+/**
+* @tab Columns
+* @section left column text
+* @tip Set the styling for your email's left column content text. Choose a size and color that is easy to read.
+*/
+.leftColumnContent {
+  /*@editable*/
+  font-family: Helvetica;
+  /*@editable*/
+  font-size: 14px;
+  /*@editable*/
+  line-height: 150%;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+* @tab Columns
+* @section left column link
+* @tip Set the styling for your email's left column content links. Choose a color that helps them stand out from your text.
+*/
+.leftColumnContent a:link, .leftColumnContent a:visited, .leftColumnContent a .yshortcuts {
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+/**
+* @tab Columns
+* @section right column text
+* @tip Set the styling for your email's right column content text. Choose a size and color that is easy to read.
+*/
+.rightColumnContent {
+  /*@editable*/
+  font-family: Helvetica;
+  /*@editable*/
+  font-size: 14px;
+  /*@editable*/
+  line-height: 150%;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+  /*@editable*/
+  text-align: left;
+}
+
+.fullColumnContent {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+  /*@editable*/
+  text-align: left;
+}
+
+.fullColumnContent img {
+  display: inline;
+  height: auto;
+  max-width: 100%;
+}
+
+#outlook .fullColumnContent img {
+  display: inline;
+  height: auto;
+  width: 560px;
+}
+
+/**
+* @tab Columns
+* @section right column link
+* @tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
+*/
+.rightColumnContent a:link, .rightColumnContent a:visited, .rightColumnContent a .yshortcuts {
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+.leftColumnContent img, .rightColumnContent img {
+  display: inline;
+  height: auto;
+  max-width: 260px;
+}
+
+/* ========== Footer Styles ========== */
+/**
+* @tab Footer
+* @section footer style
+* @tip Set the background color and borders for your email's footer area.
+* @theme footer
+*/
+#templateFooter {
+  /*@editable*/
+  background-color: #F4F4F4;
+  /*@editable*/
+  border-top: 1px solid white;
+}
+
+/**
+* @tab Footer
+* @section footer text
+* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+* @theme footer
+*/
+.footerContent {
+  /*@editable*/
+  color: #808080;
+  /*@editable*/
+  font-family: Helvetica;
+  /*@editable*/
+  font-size: 10px;
+  /*@editable*/
+  line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  /*@editable*/
+  text-align: left;
+}
+
+/**
+* @tab Footer
+* @section footer link
+* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+*/
+.footerContent a:link, .footerContent a:visited, .footerContent a .yshortcuts, .footerContent a span {
+  /*@editable*/
+  color: #606060;
+  /*@editable*/
+  font-weight: normal;
+  /*@editable*/
+  text-decoration: underline;
+}
+
+/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
+@media only screen and (max-width: 600px) {
+  /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+  body, table, td, p, a, li, blockquote {
+    -webkit-text-size-adjust: none !important;
+  }
+
+  /* Prevent Webkit platforms from changing default text sizes */
+  body {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  /* Prevent iOS Mail from adding padding to the body */
+  /* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
+  #bodyCell {
+    padding: 10px !important;
+  }
+
+  /* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
+  /* ======== Page Styles ======== */
+  /**
+  * @tab Mobile Styles
+  * @section template width
+  * @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
+  */
+  #templateContainer {
+    max-width: 600px !important;
+    /*@editable*/
+    width: 100% !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section heading 1
+  * @tip Make the first-level headings larger in size for better readability on small screens.
+  */
+  h1 {
+    /*@editable*/
+    font-size: 24px !important;
+    /*@editable*/
+    line-height: 100% !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section heading 2
+  * @tip Make the second-level headings larger in size for better readability on small screens.
+  */
+  h2 {
+    /*@editable*/
+    font-size: 20px !important;
+    /*@editable*/
+    line-height: 100% !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section heading 3
+  * @tip Make the third-level headings larger in size for better readability on small screens.
+  */
+  h3 {
+    /*@editable*/
+    font-size: 18px !important;
+    /*@editable*/
+    line-height: 100% !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section heading 4
+  * @tip Make the fourth-level headings larger in size for better readability on small screens.
+  */
+  h4 {
+    /*@editable*/
+    font-size: 16px !important;
+    /*@editable*/
+    line-height: 100% !important;
+  }
+
+  /* ======== Header Styles ======== */
+  /**
+  * @tab Mobile Styles
+  * @section header image
+  * @tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+  */
+  #headerImage {
+    height: auto !important;
+    /*@editable*/
+    max-width: 600px !important;
+    /*@editable*/
+    width: 100% !important;
+  }
+
+  /* ======== Body Styles ======== */
+  /**
+  * @tab Mobile Styles
+  * @section body image
+  * @tip Make the main body image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+  */
+  #bodyImage {
+    height: auto !important;
+    /*@editable*/
+    max-width: 560px !important;
+    /*@editable*/
+    width: 100% !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section body text
+  * @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+  */
+  .bodyContent {
+    /*@editable*/
+    font-size: 18px !important;
+    /*@editable*/
+    line-height: 125% !important;
+  }
+
+  /* ======== Column Styles ======== */
+  .templateColumnContainer {
+    display: block !important;
+    max-width: 100% !important;
+    width: auto;
+  }
+
+  #outlook .templateColumnContainer {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .twoCol.left, .twoCol.right {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .twoCol.right {
+    margin-top: 10px !important;
+  }
+
+  .twoCol .leftColumnContent, .twoCol .rightColumnContent {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section column image
+  * @tip Make the column image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+  */
+  .columnImage {
+    height: auto !important;
+    /*@editable*/
+    max-width: 260px !important;
+    /*@editable*/
+    width: 100% !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section left column text
+  * @tip Make the left column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+  */
+  .leftColumnContent {
+    /*@editable*/
+    font-size: 16px !important;
+    /*@editable*/
+    line-height: 125% !important;
+  }
+
+  /**
+  * @tab Mobile Styles
+  * @section right column text
+  * @tip Make the right column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+  */
+  .rightColumnContent {
+    /*@editable*/
+    font-size: 16px !important;
+    /*@editable*/
+    line-height: 125% !important;
+    padding-left: 0 !important;
+  }
+
+  #outlook .fullColumnContent img {
+    display: inline;
+    height: auto;
+    width: 360px;
+  }
+
+  /* ======== Footer Styles ======== */
+  /**
+  * @tab Mobile Styles
+  * @section footer text
+  * @tip Make the body content text larger in size for better readability on small screens.
+  */
+  .footerContent {
+    /*@editable*/
+    font-size: 14px !important;
+    /*@editable*/
+    line-height: 115% !important;
+  }
+
+  .footerContent a {
+    display: block !important;
+  }
+
+  /* Place footer social and utility links on their own lines, for easier access */
+}
